@@ -17,8 +17,11 @@ class MainMenuViewController: UIViewController {
 
 
     @IBAction func onlineRegistrationAction(_ sender: Any) {
-        let datePickerVC = DatePickerViewController(nibName: String(describing: DatePickerViewController.self), bundle: nil)
-        navigationController?.pushViewController(datePickerVC, animated: true)
+        
+         let datePickerVC = DatePickerViewController(nibName: String(describing: DatePickerViewController.self), bundle: nil)
+        
+            navigationController?.pushViewController(datePickerVC, animated: true)
+        
         
     }
     
