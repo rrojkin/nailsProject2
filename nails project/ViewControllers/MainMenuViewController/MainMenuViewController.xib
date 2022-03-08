@@ -32,6 +32,9 @@
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray" title="On-line appointment registration"/>
+                    <connections>
+                        <action selector="onlineRegistrationAction:" destination="-1" eventType="touchUpInside" id="OKp-no-2t0"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -14,6 +14,8 @@
 		44A530C927D77F1E00D1A03D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A530C727D77F1E00D1A03D /* LaunchScreen.storyboard */; };
 		44A530D427D77F9800D1A03D /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A530D227D77F9800D1A03D /* MainMenuViewController.swift */; };
 		44A530D527D77F9800D1A03D /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A530D327D77F9800D1A03D /* MainMenuViewController.xib */; };
+		44D3208B27D784A900FFBCD0 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D3208927D784A900FFBCD0 /* DatePickerViewController.swift */; };
+		44D3208C27D784A900FFBCD0 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D3208A27D784A900FFBCD0 /* DatePickerViewController.xib */; };
 		74D33E4AAFE05CB98ADE9F29 /* Pods_nails_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6418705750C1A187BA8ED259 /* Pods_nails_project.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		44A530CA27D77F1E00D1A03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44A530D227D77F9800D1A03D /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		44A530D327D77F9800D1A03D /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
+		44D3208927D784A900FFBCD0 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		44D3208A27D784A900FFBCD0 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
 		6418705750C1A187BA8ED259 /* Pods_nails_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nails_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D5CD35790A94F604A471EF /* Pods-nails project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nails project.debug.xcconfig"; path = "Target Support Files/Pods-nails project/Pods-nails project.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6F9174C6D71BEAB0CC2BA6 /* Pods-nails project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nails project.release.xcconfig"; path = "Target Support Files/Pods-nails project/Pods-nails project.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		44A530D027D77F5400D1A03D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				44D3208827D7848600FFBCD0 /* DatePickerViewController */,
 				44A530D127D77F6200D1A03D /* MainMenuViewController */,
 			);
 			path = ViewControllers;
@@ -101,13 +106,21 @@
 			path = MainMenuViewController;
 			sourceTree = "<group>";
 		};
+		44D3208827D7848600FFBCD0 /* DatePickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44D3208927D784A900FFBCD0 /* DatePickerViewController.swift */,
+				44D3208A27D784A900FFBCD0 /* DatePickerViewController.xib */,
+			);
+			path = DatePickerViewController;
+			sourceTree = "<group>";
+		};
 		905F59275673C82E9849527B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				65D5CD35790A94F604A471EF /* Pods-nails project.debug.xcconfig */,
 				9A6F9174C6D71BEAB0CC2BA6 /* Pods-nails project.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A530D527D77F9800D1A03D /* MainMenuViewController.xib in Resources */,
+				44D3208C27D784A900FFBCD0 /* DatePickerViewController.xib in Resources */,
 				44A530C927D77F1E00D1A03D /* LaunchScreen.storyboard in Resources */,
 				44A530C627D77F1E00D1A03D /* Assets.xcassets in Resources */,
 				44A530C427D77F1E00D1A03D /* Main.storyboard in Resources */,
@@ -227,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D3208B27D784A900FFBCD0 /* DatePickerViewController.swift in Sources */,
 				44A530D427D77F9800D1A03D /* MainMenuViewController.swift in Sources */,
 				44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */,
 				44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */,
