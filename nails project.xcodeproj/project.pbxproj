@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702727DA3218001789F8 /* TimePickerViewController.swift */; };
+		4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4491702827DA3218001789F8 /* TimePickerViewController.xib */; };
 		44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A530BC27D77F1E00D1A03D /* AppDelegate.swift */; };
 		44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A530BE27D77F1E00D1A03D /* SceneDelegate.swift */; };
 		44A530C427D77F1E00D1A03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A530C227D77F1E00D1A03D /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4491702727DA3218001789F8 /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
+		4491702827DA3218001789F8 /* TimePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePickerViewController.xib; sourceTree = "<group>"; };
 		44A530B927D77F1E00D1A03D /* nails project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nails project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A530BC27D77F1E00D1A03D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44A530BE27D77F1E00D1A03D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,15 @@
 				6418705750C1A187BA8ED259 /* Pods_nails_project.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4491702627DA31F9001789F8 /* TimePickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4491702727DA3218001789F8 /* TimePickerViewController.swift */,
+				4491702827DA3218001789F8 /* TimePickerViewController.xib */,
+			);
+			path = TimePickerViewController;
 			sourceTree = "<group>";
 		};
 		44A530B027D77F1E00D1A03D = {
@@ -91,6 +104,7 @@
 		44A530D027D77F5400D1A03D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4491702627DA31F9001789F8 /* TimePickerViewController */,
 				44D3208827D7848600FFBCD0 /* DatePickerViewController */,
 				44A530D127D77F6200D1A03D /* MainMenuViewController */,
 			);
@@ -185,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A530D527D77F9800D1A03D /* MainMenuViewController.xib in Resources */,
+				4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */,
 				44D3208C27D784A900FFBCD0 /* DatePickerViewController.xib in Resources */,
 				44A530C927D77F1E00D1A03D /* LaunchScreen.storyboard in Resources */,
 				44A530C627D77F1E00D1A03D /* Assets.xcassets in Resources */,
@@ -244,6 +259,7 @@
 				44B8ED8127D7B17300B2B41F /* DatePickerViewController.swift in Sources */,
 				44A530D427D77F9800D1A03D /* MainMenuViewController.swift in Sources */,
 				44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */,
+				4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */,
 				44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

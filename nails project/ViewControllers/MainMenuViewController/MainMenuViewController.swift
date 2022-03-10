@@ -20,7 +20,7 @@ class MainMenuViewController: UIViewController {
         
          let datePickerVC = DatePickerViewController(nibName: String(describing: DatePickerViewController.self), bundle: nil)
         
-            navigationController?.pushViewController(datePickerVC, animated: true)
+        navigationController?.pushViewController(datePickerVC, animated: true)
         
         
     }

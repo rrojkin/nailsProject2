@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimePickerViewController" customModule="nails_project" customModuleProvider="target">
+            <connections>
+                <outlet property="date" destination="Yik-yd-zVY" id="Wzz-P2-0aa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yik-yd-zVY">
+                    <rect key="frame" x="16" y="94" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiJ-L9-jsL">
+                    <rect key="frame" x="100" y="165" width="214" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUW-L8-pw8">
+                    <rect key="frame" x="100" y="226" width="214" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nV-uL-qVR">
+                    <rect key="frame" x="100" y="287" width="214" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jiJ-L9-jsL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="24I-w2-O1Q"/>
+                <constraint firstItem="Yik-yd-zVY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3Oa-Hj-oxb"/>
+                <constraint firstItem="iUW-L8-pw8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="6iT-nE-VkW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yik-yd-zVY" secondAttribute="trailing" constant="16" id="6sQ-ba-1Gi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iUW-L8-pw8" secondAttribute="trailing" constant="100" id="S3b-as-F5g"/>
+                <constraint firstItem="6nV-uL-qVR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="V0x-ZR-J1A"/>
+                <constraint firstItem="jiJ-L9-jsL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W9k-2R-Nth"/>
+                <constraint firstItem="iUW-L8-pw8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XgK-jE-pQF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jiJ-L9-jsL" secondAttribute="trailing" constant="100" id="e2G-i5-0MY"/>
+                <constraint firstItem="6nV-uL-qVR" firstAttribute="top" secondItem="iUW-L8-pw8" secondAttribute="bottom" constant="30" id="ezv-rG-Qyg"/>
+                <constraint firstItem="jiJ-L9-jsL" firstAttribute="top" secondItem="Yik-yd-zVY" secondAttribute="bottom" constant="50" id="lBQ-cv-ZHs"/>
+                <constraint firstItem="6nV-uL-qVR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mJE-4c-pOl"/>
+                <constraint firstItem="iUW-L8-pw8" firstAttribute="top" secondItem="jiJ-L9-jsL" secondAttribute="bottom" constant="30" id="pDA-mH-Ggf"/>
+                <constraint firstItem="Yik-yd-zVY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="vYf-vP-nGR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6nV-uL-qVR" secondAttribute="trailing" constant="100" id="xvd-Oa-9ss"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="77"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
