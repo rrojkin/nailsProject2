@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702727DA3218001789F8 /* TimePickerViewController.swift */; };
 		4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4491702827DA3218001789F8 /* TimePickerViewController.xib */; };
+		4491702E27DA386C001789F8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702C27DA386C001789F8 /* RegistrationViewController.swift */; };
+		4491702F27DA386C001789F8 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4491702D27DA386C001789F8 /* RegistrationViewController.xib */; };
+		4491703327DA3D24001789F8 /* RegistrationCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491703127DA3D24001789F8 /* RegistrationCellTableViewCell.swift */; };
+		4491703427DA3D24001789F8 /* RegistrationCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4491703227DA3D24001789F8 /* RegistrationCellTableViewCell.xib */; };
 		44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A530BC27D77F1E00D1A03D /* AppDelegate.swift */; };
 		44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A530BE27D77F1E00D1A03D /* SceneDelegate.swift */; };
 		44A530C427D77F1E00D1A03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A530C227D77F1E00D1A03D /* Main.storyboard */; };
@@ -24,6 +28,10 @@
 /* Begin PBXFileReference section */
 		4491702727DA3218001789F8 /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
 		4491702827DA3218001789F8 /* TimePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePickerViewController.xib; sourceTree = "<group>"; };
+		4491702C27DA386C001789F8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		4491702D27DA386C001789F8 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		4491703127DA3D24001789F8 /* RegistrationCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCellTableViewCell.swift; sourceTree = "<group>"; };
+		4491703227DA3D24001789F8 /* RegistrationCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationCellTableViewCell.xib; sourceTree = "<group>"; };
 		44A530B927D77F1E00D1A03D /* nails project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nails project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A530BC27D77F1E00D1A03D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44A530BE27D77F1E00D1A03D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +77,24 @@
 			path = TimePickerViewController;
 			sourceTree = "<group>";
 		};
+		4491702B27DA384E001789F8 /* RegistrationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4491702C27DA386C001789F8 /* RegistrationViewController.swift */,
+				4491702D27DA386C001789F8 /* RegistrationViewController.xib */,
+			);
+			path = RegistrationViewController;
+			sourceTree = "<group>";
+		};
+		4491703027DA3D0A001789F8 /* RegistrationCell */ = {
+			isa = PBXGroup;
+			children = (
+				4491703127DA3D24001789F8 /* RegistrationCellTableViewCell.swift */,
+				4491703227DA3D24001789F8 /* RegistrationCellTableViewCell.xib */,
+			);
+			path = RegistrationCell;
+			sourceTree = "<group>";
+		};
 		44A530B027D77F1E00D1A03D = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +130,8 @@
 		44A530D027D77F5400D1A03D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4491703027DA3D0A001789F8 /* RegistrationCell */,
+				4491702B27DA384E001789F8 /* RegistrationViewController */,
 				4491702627DA31F9001789F8 /* TimePickerViewController */,
 				44D3208827D7848600FFBCD0 /* DatePickerViewController */,
 				44A530D127D77F6200D1A03D /* MainMenuViewController */,
@@ -198,11 +226,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4491703427DA3D24001789F8 /* RegistrationCellTableViewCell.xib in Resources */,
 				44A530D527D77F9800D1A03D /* MainMenuViewController.xib in Resources */,
 				4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */,
 				44D3208C27D784A900FFBCD0 /* DatePickerViewController.xib in Resources */,
 				44A530C927D77F1E00D1A03D /* LaunchScreen.storyboard in Resources */,
 				44A530C627D77F1E00D1A03D /* Assets.xcassets in Resources */,
+				4491702F27DA386C001789F8 /* RegistrationViewController.xib in Resources */,
 				44A530C427D77F1E00D1A03D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4491702E27DA386C001789F8 /* RegistrationViewController.swift in Sources */,
 				44B8ED8127D7B17300B2B41F /* DatePickerViewController.swift in Sources */,
 				44A530D427D77F9800D1A03D /* MainMenuViewController.swift in Sources */,
+				4491703327DA3D24001789F8 /* RegistrationCellTableViewCell.swift in Sources */,
 				44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */,
 				4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */,
 				44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */,
