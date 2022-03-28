@@ -7,4 +7,6 @@ target 'nails project' do
 
   # Pods for nails project
 pod 'FSCalendar' 
+pod 'Firebase/Core'
+pod 'Firebase/Database'
 end

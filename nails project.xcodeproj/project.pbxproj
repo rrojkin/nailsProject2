@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		441511A727DE404B008149C0 /* ChangeDateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441511A627DE404B008149C0 /* ChangeDateDelegate.swift */; };
 		447F08A327F1DCB600B31D1E /* RegistrationCompleteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F08A227F1DCB600B31D1E /* RegistrationCompleteDelegate.swift */; };
+		447F08A527F1EC1F00B31D1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 447F08A427F1EC1F00B31D1E /* GoogleService-Info.plist */; };
 		4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702727DA3218001789F8 /* TimePickerViewController.swift */; };
 		4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4491702827DA3218001789F8 /* TimePickerViewController.xib */; };
 		4491702E27DA386C001789F8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702C27DA386C001789F8 /* RegistrationViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		441511A627DE404B008149C0 /* ChangeDateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDateDelegate.swift; sourceTree = "<group>"; };
 		447F08A227F1DCB600B31D1E /* RegistrationCompleteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCompleteDelegate.swift; sourceTree = "<group>"; };
+		447F08A427F1EC1F00B31D1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4491702727DA3218001789F8 /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
 		4491702827DA3218001789F8 /* TimePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePickerViewController.xib; sourceTree = "<group>"; };
 		4491702C27DA386C001789F8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		44A530BB27D77F1E00D1A03D /* nails project */ = {
 			isa = PBXGroup;
 			children = (
+				447F08A427F1EC1F00B31D1E /* GoogleService-Info.plist */,
 				441511A527DE4035008149C0 /* Delegates */,
 				44A530D027D77F5400D1A03D /* ViewControllers */,
 				44A530BC27D77F1E00D1A03D /* AppDelegate.swift */,
@@ -242,6 +245,7 @@
 			files = (
 				4491703427DA3D24001789F8 /* RegistrationCellTableViewCell.xib in Resources */,
 				44A530D527D77F9800D1A03D /* MainMenuViewController.xib in Resources */,
+				447F08A527F1EC1F00B31D1E /* GoogleService-Info.plist in Resources */,
 				4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */,
 				44D3208C27D784A900FFBCD0 /* DatePickerViewController.xib in Resources */,
 				44A530C927D77F1E00D1A03D /* LaunchScreen.storyboard in Resources */,

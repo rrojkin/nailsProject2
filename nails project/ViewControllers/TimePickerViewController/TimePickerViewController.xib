@@ -31,7 +31,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiJ-L9-jsL">
                     <rect key="frame" x="100" y="165" width="214" height="31"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="1 PM"/>
                     <connections>
                         <action selector="onePmButton:" destination="-1" eventType="touchUpInside" id="Yl1-b9-LbH"/>
                     </connections>
@@ -39,7 +39,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUW-L8-pw8">
                     <rect key="frame" x="100" y="226" width="214" height="31"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="2 PM"/>
                     <connections>
                         <action selector="twoPmButton:" destination="-1" eventType="touchUpInside" id="Xdu-bs-23Q"/>
                     </connections>
@@ -47,7 +47,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nV-uL-qVR">
                     <rect key="frame" x="100" y="287" width="214" height="31"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="3 PM"/>
                     <connections>
                         <action selector="threePmButton:" destination="-1" eventType="touchUpInside" id="0i5-iL-6w3"/>
                     </connections>
