@@ -20,19 +20,27 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate {
         viewOutlet.layer.cornerRadius = 10
         viewOutlet.layer.borderColor = UIColor.black.cgColor
         viewOutlet.layer.borderWidth = 1
+        
     }
- 
+    var stringDate: String = ""
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let formatter = DateFormatter()
         formatter.dateFormat =  "dd-MM-yyyy"
         let string = formatter.string(from: date)
-        let TimePickerVC = TimePickerViewController(nibName: String(describing: TimePickerViewController.self), bundle: nil)
-        TimePickerVC.dateText = string
-        present(TimePickerVC, animated: true)
         
+        let timePickerVC = TimePickerViewController(nibName: String(describing: TimePickerViewController.self), bundle: nil)
+        
+        timePickerVC.dateText = string
+        
+        let navigation = UINavigationController(rootViewController: timePickerVC)
+    
+        
+        present(navigation, animated: true)
+       
     }
     
 }
+
 
 
 

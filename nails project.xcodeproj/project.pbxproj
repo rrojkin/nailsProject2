@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441511A727DE404B008149C0 /* ChangeDateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441511A627DE404B008149C0 /* ChangeDateDelegate.swift */; };
 		4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702727DA3218001789F8 /* TimePickerViewController.swift */; };
 		4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4491702827DA3218001789F8 /* TimePickerViewController.xib */; };
 		4491702E27DA386C001789F8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702C27DA386C001789F8 /* RegistrationViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		441511A627DE404B008149C0 /* ChangeDateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDateDelegate.swift; sourceTree = "<group>"; };
 		4491702727DA3218001789F8 /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
 		4491702827DA3218001789F8 /* TimePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePickerViewController.xib; sourceTree = "<group>"; };
 		4491702C27DA386C001789F8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 				6418705750C1A187BA8ED259 /* Pods_nails_project.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		441511A527DE4035008149C0 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				441511A627DE404B008149C0 /* ChangeDateDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		4491702627DA31F9001789F8 /* TimePickerViewController */ = {
@@ -116,6 +126,7 @@
 		44A530BB27D77F1E00D1A03D /* nails project */ = {
 			isa = PBXGroup;
 			children = (
+				441511A527DE4035008149C0 /* Delegates */,
 				44A530D027D77F5400D1A03D /* ViewControllers */,
 				44A530BC27D77F1E00D1A03D /* AppDelegate.swift */,
 				44A530BE27D77F1E00D1A03D /* SceneDelegate.swift */,
@@ -288,6 +299,7 @@
 			files = (
 				4491702E27DA386C001789F8 /* RegistrationViewController.swift in Sources */,
 				44B8ED8127D7B17300B2B41F /* DatePickerViewController.swift in Sources */,
+				441511A727DE404B008149C0 /* ChangeDateDelegate.swift in Sources */,
 				44A530D427D77F9800D1A03D /* MainMenuViewController.swift in Sources */,
 				4491703327DA3D24001789F8 /* RegistrationCellTableViewCell.swift in Sources */,
 				44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */,
