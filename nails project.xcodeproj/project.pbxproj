@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		441511A727DE404B008149C0 /* ChangeDateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441511A627DE404B008149C0 /* ChangeDateDelegate.swift */; };
+		447F08A327F1DCB600B31D1E /* RegistrationCompleteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F08A227F1DCB600B31D1E /* RegistrationCompleteDelegate.swift */; };
 		4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702727DA3218001789F8 /* TimePickerViewController.swift */; };
 		4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4491702827DA3218001789F8 /* TimePickerViewController.xib */; };
 		4491702E27DA386C001789F8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702C27DA386C001789F8 /* RegistrationViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		441511A627DE404B008149C0 /* ChangeDateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDateDelegate.swift; sourceTree = "<group>"; };
+		447F08A227F1DCB600B31D1E /* RegistrationCompleteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCompleteDelegate.swift; sourceTree = "<group>"; };
 		4491702727DA3218001789F8 /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
 		4491702827DA3218001789F8 /* TimePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePickerViewController.xib; sourceTree = "<group>"; };
 		4491702C27DA386C001789F8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				441511A627DE404B008149C0 /* ChangeDateDelegate.swift */,
+				447F08A227F1DCB600B31D1E /* RegistrationCompleteDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */,
 				4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */,
 				44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */,
+				447F08A327F1DCB600B31D1E /* RegistrationCompleteDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimePickerViewController" customModule="nails_project" customModuleProvider="target">
             <connections>
                 <outlet property="date" destination="Yik-yd-zVY" id="Wzz-P2-0aa"/>
+                <outlet property="onePmOutlet" destination="jiJ-L9-jsL" id="hMt-1B-LpF"/>
+                <outlet property="threePmOutlet" destination="6nV-uL-qVR" id="yY2-lS-Po1"/>
+                <outlet property="twoPmOutlet" destination="iUW-L8-pw8" id="grq-LB-aJ2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

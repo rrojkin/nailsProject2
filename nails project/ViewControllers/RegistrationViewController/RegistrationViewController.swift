@@ -14,6 +14,8 @@ class RegistrationViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var phoneInput: UITextField!
     @IBOutlet weak var socialMediaInput: UITextField!
     
+    weak var completeRegistration: RegistrationComplete?
+    
     var resultServices = [String]()
     
     let services = ["Маникюр без покрытия","Маникюр с покрытием гель-лаком","Маникюр с укреплением гелем","Наращивание ногтей","Коррекция наращивания"]
@@ -44,7 +46,9 @@ class RegistrationViewController: UIViewController, UITableViewDelegate {
             navigationController?.popViewController(animated: true)
             nameInput.text = ""
             phoneInput.text = ""
-            socialMediaInput.text = "" }
+            socialMediaInput.text = ""
+            completeRegistration?.RegistrationComplete(complete: true)
+        }
         print(resultServices)
     }
 
@@ -100,3 +104,5 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+
