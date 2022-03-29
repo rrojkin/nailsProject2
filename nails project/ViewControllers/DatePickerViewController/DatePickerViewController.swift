@@ -23,7 +23,19 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate {
         
     }
     var stringDate: String = ""
+    
+    func calendar(_ calendar: FSCalendar, shouldSelect date: Date, at monthPosition: FSCalendarMonthPosition) -> Bool {
+        if date .compare(Date()) == .orderedAscending {
+            return false
+        }
+        else {
+            return true
+        }
+    }
+    
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        
+        
         let formatter = DateFormatter()
         formatter.dateFormat =  "dd-MM-yyyy"
         let string = formatter.string(from: date)
@@ -36,10 +48,10 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate {
     
         
         present(navigation, animated: true)
+        }
        
     }
     
-}
 
 
 

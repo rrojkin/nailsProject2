@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		441511A727DE404B008149C0 /* ChangeDateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441511A627DE404B008149C0 /* ChangeDateDelegate.swift */; };
 		447F08A327F1DCB600B31D1E /* RegistrationCompleteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F08A227F1DCB600B31D1E /* RegistrationCompleteDelegate.swift */; };
-		447F08A527F1EC1F00B31D1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 447F08A427F1EC1F00B31D1E /* GoogleService-Info.plist */; };
+		447F08A727F1F28C00B31D1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 447F08A627F1F28C00B31D1E /* GoogleService-Info.plist */; };
 		4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702727DA3218001789F8 /* TimePickerViewController.swift */; };
 		4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4491702827DA3218001789F8 /* TimePickerViewController.xib */; };
 		4491702E27DA386C001789F8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4491702C27DA386C001789F8 /* RegistrationViewController.swift */; };
@@ -25,13 +25,19 @@
 		44A530D527D77F9800D1A03D /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A530D327D77F9800D1A03D /* MainMenuViewController.xib */; };
 		44B8ED8127D7B17300B2B41F /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8ED8027D7B17300B2B41F /* DatePickerViewController.swift */; };
 		44D3208C27D784A900FFBCD0 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D3208A27D784A900FFBCD0 /* DatePickerViewController.xib */; };
+		44D97E4727F30E430084557C /* MyWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E4527F30E430084557C /* MyWorksViewController.swift */; };
+		44D97E4827F30E430084557C /* MyWorksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E4627F30E430084557C /* MyWorksViewController.xib */; };
+		44D97E4D27F30FB80084557C /* MyWorksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E4B27F30FB80084557C /* MyWorksCell.swift */; };
+		44D97E4E27F30FB80084557C /* MyWorksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E4C27F30FB80084557C /* MyWorksCell.xib */; };
+		44D97E5227F319220084557C /* MyWorksDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E5027F319220084557C /* MyWorksDescriptionViewController.swift */; };
+		44D97E5327F319220084557C /* MyWorksDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E5127F319220084557C /* MyWorksDescriptionViewController.xib */; };
 		74D33E4AAFE05CB98ADE9F29 /* Pods_nails_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6418705750C1A187BA8ED259 /* Pods_nails_project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		441511A627DE404B008149C0 /* ChangeDateDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDateDelegate.swift; sourceTree = "<group>"; };
 		447F08A227F1DCB600B31D1E /* RegistrationCompleteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCompleteDelegate.swift; sourceTree = "<group>"; };
-		447F08A427F1EC1F00B31D1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		447F08A627F1F28C00B31D1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4491702727DA3218001789F8 /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
 		4491702827DA3218001789F8 /* TimePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePickerViewController.xib; sourceTree = "<group>"; };
 		4491702C27DA386C001789F8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		44A530D327D77F9800D1A03D /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		44B8ED8027D7B17300B2B41F /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		44D3208A27D784A900FFBCD0 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		44D97E4527F30E430084557C /* MyWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorksViewController.swift; sourceTree = "<group>"; };
+		44D97E4627F30E430084557C /* MyWorksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWorksViewController.xib; sourceTree = "<group>"; };
+		44D97E4B27F30FB80084557C /* MyWorksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorksCell.swift; sourceTree = "<group>"; };
+		44D97E4C27F30FB80084557C /* MyWorksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWorksCell.xib; sourceTree = "<group>"; };
+		44D97E5027F319220084557C /* MyWorksDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorksDescriptionViewController.swift; sourceTree = "<group>"; };
+		44D97E5127F319220084557C /* MyWorksDescriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWorksDescriptionViewController.xib; sourceTree = "<group>"; };
 		6418705750C1A187BA8ED259 /* Pods_nails_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nails_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D5CD35790A94F604A471EF /* Pods-nails project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nails project.debug.xcconfig"; path = "Target Support Files/Pods-nails project/Pods-nails project.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6F9174C6D71BEAB0CC2BA6 /* Pods-nails project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nails project.release.xcconfig"; path = "Target Support Files/Pods-nails project/Pods-nails project.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,7 +143,7 @@
 		44A530BB27D77F1E00D1A03D /* nails project */ = {
 			isa = PBXGroup;
 			children = (
-				447F08A427F1EC1F00B31D1E /* GoogleService-Info.plist */,
+				44D97E4927F30F840084557C /* Cells */,
 				441511A527DE4035008149C0 /* Delegates */,
 				44A530D027D77F5400D1A03D /* ViewControllers */,
 				44A530BC27D77F1E00D1A03D /* AppDelegate.swift */,
@@ -139,6 +151,7 @@
 				44A530C227D77F1E00D1A03D /* Main.storyboard */,
 				44A530C527D77F1E00D1A03D /* Assets.xcassets */,
 				44A530C727D77F1E00D1A03D /* LaunchScreen.storyboard */,
+				447F08A627F1F28C00B31D1E /* GoogleService-Info.plist */,
 				44A530CA27D77F1E00D1A03D /* Info.plist */,
 			);
 			path = "nails project";
@@ -147,7 +160,8 @@
 		44A530D027D77F5400D1A03D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4491703027DA3D0A001789F8 /* RegistrationCell */,
+				44D97E4F27F318FE0084557C /* MyWorksDescription */,
+				44D97E4427F30E240084557C /* MyWorksViewController */,
 				4491702B27DA384E001789F8 /* RegistrationViewController */,
 				4491702627DA31F9001789F8 /* TimePickerViewController */,
 				44D3208827D7848600FFBCD0 /* DatePickerViewController */,
@@ -172,6 +186,42 @@
 				44D3208A27D784A900FFBCD0 /* DatePickerViewController.xib */,
 			);
 			path = DatePickerViewController;
+			sourceTree = "<group>";
+		};
+		44D97E4427F30E240084557C /* MyWorksViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44D97E4527F30E430084557C /* MyWorksViewController.swift */,
+				44D97E4627F30E430084557C /* MyWorksViewController.xib */,
+			);
+			path = MyWorksViewController;
+			sourceTree = "<group>";
+		};
+		44D97E4927F30F840084557C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44D97E4A27F30F980084557C /* MyWorksCell */,
+				4491703027DA3D0A001789F8 /* RegistrationCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44D97E4A27F30F980084557C /* MyWorksCell */ = {
+			isa = PBXGroup;
+			children = (
+				44D97E4B27F30FB80084557C /* MyWorksCell.swift */,
+				44D97E4C27F30FB80084557C /* MyWorksCell.xib */,
+			);
+			path = MyWorksCell;
+			sourceTree = "<group>";
+		};
+		44D97E4F27F318FE0084557C /* MyWorksDescription */ = {
+			isa = PBXGroup;
+			children = (
+				44D97E5027F319220084557C /* MyWorksDescriptionViewController.swift */,
+				44D97E5127F319220084557C /* MyWorksDescriptionViewController.xib */,
+			);
+			path = MyWorksDescription;
 			sourceTree = "<group>";
 		};
 		905F59275673C82E9849527B /* Pods */ = {
@@ -245,7 +295,10 @@
 			files = (
 				4491703427DA3D24001789F8 /* RegistrationCellTableViewCell.xib in Resources */,
 				44A530D527D77F9800D1A03D /* MainMenuViewController.xib in Resources */,
-				447F08A527F1EC1F00B31D1E /* GoogleService-Info.plist in Resources */,
+				44D97E4E27F30FB80084557C /* MyWorksCell.xib in Resources */,
+				447F08A727F1F28C00B31D1E /* GoogleService-Info.plist in Resources */,
+				44D97E5327F319220084557C /* MyWorksDescriptionViewController.xib in Resources */,
+				44D97E4827F30E430084557C /* MyWorksViewController.xib in Resources */,
 				4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */,
 				44D3208C27D784A900FFBCD0 /* DatePickerViewController.xib in Resources */,
 				44A530C927D77F1E00D1A03D /* LaunchScreen.storyboard in Resources */,
@@ -308,11 +361,14 @@
 				44B8ED8127D7B17300B2B41F /* DatePickerViewController.swift in Sources */,
 				441511A727DE404B008149C0 /* ChangeDateDelegate.swift in Sources */,
 				44A530D427D77F9800D1A03D /* MainMenuViewController.swift in Sources */,
+				44D97E4D27F30FB80084557C /* MyWorksCell.swift in Sources */,
 				4491703327DA3D24001789F8 /* RegistrationCellTableViewCell.swift in Sources */,
 				44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */,
 				4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */,
+				44D97E5227F319220084557C /* MyWorksDescriptionViewController.swift in Sources */,
 				44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */,
 				447F08A327F1DCB600B31D1E /* RegistrationCompleteDelegate.swift in Sources */,
+				44D97E4727F30E430084557C /* MyWorksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

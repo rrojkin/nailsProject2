@@ -25,5 +25,9 @@ class MainMenuViewController: UIViewController {
         
     }
     
-
+    @IBAction func myWorksAction(_ sender: Any) {
+        let myWorksVC = MyWorksViewController(nibName: String(describing: MyWorksViewController.self), bundle: nil)
+        navigationController?.pushViewController(myWorksVC, animated: true)
+    }
+    
 }
