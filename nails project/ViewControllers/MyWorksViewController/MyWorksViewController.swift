@@ -21,8 +21,24 @@ class MyWorksViewController: UIViewController {
         nails.append(UIImage(imageLiteralResourceName: "nails3"))
         tableView.dataSource = self
         setUpTable()
-        
+                
+//        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(swipeNextEntry)))
     }
+    
+    
+//    @objc func swipeNextEntry(_ sender: UIPanGestureRecognizer) {
+//        print("[DEBUG] Pan Gesture Detected")
+//
+//        if (sender.state == .ended) {
+//            let velocity = sender.velocity(in: self.view)
+//
+//            if (velocity.x > 0) {
+//                print("previous")
+//                navigationController?.hidesBarsOnSwipe = false
+//            } else { return }
+//        }
+//    }
+    
 
     private func setUpTable() {
         tableView.dataSource = self
@@ -53,7 +69,10 @@ extension MyWorksViewController: UITableViewDataSource {
         descriptionVC.imageNumber = indexPath.row
         descriptionVC.nails = nails
         navigationController?.pushViewController(descriptionVC, animated: true)
+        tableView.reloadData()
     }
     
     
 }
+
+

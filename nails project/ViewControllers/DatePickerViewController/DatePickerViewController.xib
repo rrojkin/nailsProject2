@@ -20,14 +20,33 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-eg-b4u" customClass="FSCalendar">
-                    <rect key="frame" x="16" y="144" width="382" height="368"/>
+                    <rect key="frame" x="16" y="144" width="382" height="618"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите дату для записи" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tb-FD-Ovt">
+                    <rect key="frame" x="16" y="73" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доступны для выбора только даты начиная с завтрашнего дня" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPr-fg-Ja9">
+                    <rect key="frame" x="16" y="99" width="382" height="11"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dsg-eg-b4u" secondAttribute="bottom" constant="350" id="08v-NF-zVM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dsg-eg-b4u" secondAttribute="bottom" constant="100" id="08v-NF-zVM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fPr-fg-Ja9" secondAttribute="trailing" constant="16" id="7CB-jd-3Yg"/>
+                <constraint firstItem="fPr-fg-Ja9" firstAttribute="top" secondItem="9Tb-FD-Ovt" secondAttribute="bottom" constant="5" id="APl-KV-yH3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Tb-FD-Ovt" secondAttribute="trailing" constant="16" id="LHo-Th-Rzr"/>
+                <constraint firstItem="9Tb-FD-Ovt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="NKM-Ia-FXz"/>
+                <constraint firstItem="dsg-eg-b4u" firstAttribute="top" secondItem="9Tb-FD-Ovt" secondAttribute="bottom" constant="50" id="OEf-xH-3Ll"/>
+                <constraint firstItem="fPr-fg-Ja9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ug3-TK-1gl"/>
                 <constraint firstItem="dsg-eg-b4u" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="cVr-jI-6cl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dsg-eg-b4u" secondAttribute="trailing" constant="16" id="wHO-Wl-Nu3"/>
                 <constraint firstItem="dsg-eg-b4u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="x0u-W2-Eml"/>

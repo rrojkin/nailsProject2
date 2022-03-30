@@ -9,21 +9,100 @@ import UIKit
 
 class MainMenuViewController: UIViewController {
 
+    @IBOutlet weak var registrationButton: UIButton!
+    @IBOutlet weak var myWorksButton: UIButton!
+    
+    @IBOutlet weak var manicureLabel: UILabel!
+    
+    @IBOutlet weak var registrationShadow: UILabel!
+    @IBOutlet weak var myWorksShadow: UILabel!
+    
+    var isFirstLaunch: Bool = true
+    var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        registrationButton.addTarget(self, action: #selector(holdRelease), for: .touchUpInside);
+      registrationButton.addTarget(self, action: #selector(heldDown), for: .touchDown)
+       registrationButton.addTarget(self, action: #selector(buttonHeldAndReleased), for: .touchDragExit)
+        
+        myWorksButton.addTarget(self, action: #selector(holdRelease), for: .touchUpInside);
+      myWorksButton.addTarget(self, action: #selector(heldDownMyWorks), for: .touchDown)
+       myWorksButton.addTarget(self, action: #selector(buttonHeldAndReleased), for: .touchDragExit)
 
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    
+
+    //target functions
+    @objc func heldDown()
+    {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.005, repeats: true, block: { _ in
+           
+            self.registrationButton.frame.origin.x += 1
+            self.registrationButton.frame.origin.y += 1
+            print(self.registrationButton.frame.origin.y)
+            print(self.registrationShadow.frame.origin.y)
+            if self.registrationButton.frame.origin.y >= self.registrationShadow.frame.origin.y {
+                self.timer?.invalidate()
+                self.timer = nil
+            }
+        })
+    }
+    
+    @objc func heldDownMyWorks()
+    {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.005, repeats: true, block: { _ in
+           
+            self.myWorksButton.frame.origin.x += 1
+            self.myWorksButton.frame.origin.y += 1
+            print(self.myWorksButton.frame.origin.y)
+            print(self.myWorksShadow.frame.origin.y)
+            if self.myWorksButton.frame.origin.y >= self.myWorksShadow.frame.origin.y {
+                self.timer?.invalidate()
+                self.timer = nil
+            }
+        })
     }
 
+    @objc func holdRelease()
+    {
+        self.timer?.invalidate()
+        self.timer = nil
+    }
+
+    @objc func buttonHeldAndReleased(){
+        self.timer?.invalidate()
+        self.timer = nil
+    }
+
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if isFirstLaunch {
+        manicureLabel.center.x = view.center.x
+        manicureLabel.center.x -= view.bounds.width
+        UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut], animations: { [self] in
+            manicureLabel.center.x += view.bounds.width
+            view.layoutIfNeeded()
+        }, completion: nil)
+            isFirstLaunch = false
+        }
+    }
+    
+   
 
     @IBAction func onlineRegistrationAction(_ sender: Any) {
         
-         let datePickerVC = DatePickerViewController(nibName: String(describing: DatePickerViewController.self), bundle: nil)
+        let datePickerVC = DatePickerViewController(nibName: String(describing: DatePickerViewController.self), bundle: nil)
         
         navigationController?.pushViewController(datePickerVC, animated: true)
         
         
     }
+     
     
     @IBAction func myWorksAction(_ sender: Any) {
         let myWorksVC = MyWorksViewController(nibName: String(describing: MyWorksViewController.self), bundle: nil)
@@ -31,3 +110,6 @@ class MainMenuViewController: UIViewController {
     }
     
 }
+
+
+

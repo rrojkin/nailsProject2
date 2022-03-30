@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimePickerViewController" customModule="nails_project" customModuleProvider="target">
             <connections>
                 <outlet property="date" destination="Yik-yd-zVY" id="Wzz-P2-0aa"/>
+                <outlet property="loaderIndicator" destination="AwX-VI-qva" id="tnj-xA-GH7"/>
                 <outlet property="onePmOutlet" destination="jiJ-L9-jsL" id="hMt-1B-LpF"/>
                 <outlet property="threePmOutlet" destination="6nV-uL-qVR" id="yY2-lS-Po1"/>
                 <outlet property="twoPmOutlet" destination="iUW-L8-pw8" id="grq-LB-aJ2"/>
@@ -52,6 +53,9 @@
                         <action selector="threePmButton:" destination="-1" eventType="touchUpInside" id="0i5-iL-6w3"/>
                     </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="AwX-VI-qva">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,12 +64,14 @@
                 <constraint firstItem="Yik-yd-zVY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3Oa-Hj-oxb"/>
                 <constraint firstItem="iUW-L8-pw8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="6iT-nE-VkW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yik-yd-zVY" secondAttribute="trailing" constant="16" id="6sQ-ba-1Gi"/>
+                <constraint firstItem="AwX-VI-qva" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Frp-I5-qLd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iUW-L8-pw8" secondAttribute="trailing" constant="100" id="S3b-as-F5g"/>
                 <constraint firstItem="6nV-uL-qVR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="V0x-ZR-J1A"/>
                 <constraint firstItem="jiJ-L9-jsL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W9k-2R-Nth"/>
                 <constraint firstItem="iUW-L8-pw8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XgK-jE-pQF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jiJ-L9-jsL" secondAttribute="trailing" constant="100" id="e2G-i5-0MY"/>
                 <constraint firstItem="6nV-uL-qVR" firstAttribute="top" secondItem="iUW-L8-pw8" secondAttribute="bottom" constant="30" id="ezv-rG-Qyg"/>
+                <constraint firstItem="AwX-VI-qva" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ioN-E8-DKL"/>
                 <constraint firstItem="jiJ-L9-jsL" firstAttribute="top" secondItem="Yik-yd-zVY" secondAttribute="bottom" constant="50" id="lBQ-cv-ZHs"/>
                 <constraint firstItem="6nV-uL-qVR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mJE-4c-pOl"/>
                 <constraint firstItem="iUW-L8-pw8" firstAttribute="top" secondItem="jiJ-L9-jsL" secondAttribute="bottom" constant="30" id="pDA-mH-Ggf"/>

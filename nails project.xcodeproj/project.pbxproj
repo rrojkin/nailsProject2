@@ -31,6 +31,10 @@
 		44D97E4E27F30FB80084557C /* MyWorksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E4C27F30FB80084557C /* MyWorksCell.xib */; };
 		44D97E5227F319220084557C /* MyWorksDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E5027F319220084557C /* MyWorksDescriptionViewController.swift */; };
 		44D97E5327F319220084557C /* MyWorksDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E5127F319220084557C /* MyWorksDescriptionViewController.xib */; };
+		44D97E7A27F376F60084557C /* dateIsAvalible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E7927F376F60084557C /* dateIsAvalible.swift */; };
+		44D97E7C27F3827A0084557C /* checkForConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E7B27F3827A0084557C /* checkForConnection.swift */; };
+		44D97E8027F383090084557C /* NoConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E7E27F383090084557C /* NoConnectionViewController.swift */; };
+		44D97E8127F383090084557C /* NoConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E7F27F383090084557C /* NoConnectionViewController.xib */; };
 		74D33E4AAFE05CB98ADE9F29 /* Pods_nails_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6418705750C1A187BA8ED259 /* Pods_nails_project.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,10 @@
 		44D97E4C27F30FB80084557C /* MyWorksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWorksCell.xib; sourceTree = "<group>"; };
 		44D97E5027F319220084557C /* MyWorksDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorksDescriptionViewController.swift; sourceTree = "<group>"; };
 		44D97E5127F319220084557C /* MyWorksDescriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWorksDescriptionViewController.xib; sourceTree = "<group>"; };
+		44D97E7927F376F60084557C /* dateIsAvalible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateIsAvalible.swift; sourceTree = "<group>"; };
+		44D97E7B27F3827A0084557C /* checkForConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkForConnection.swift; sourceTree = "<group>"; };
+		44D97E7E27F383090084557C /* NoConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoConnectionViewController.swift; sourceTree = "<group>"; };
+		44D97E7F27F383090084557C /* NoConnectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoConnectionViewController.xib; sourceTree = "<group>"; };
 		6418705750C1A187BA8ED259 /* Pods_nails_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nails_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D5CD35790A94F604A471EF /* Pods-nails project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nails project.debug.xcconfig"; path = "Target Support Files/Pods-nails project/Pods-nails project.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6F9174C6D71BEAB0CC2BA6 /* Pods-nails project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nails project.release.xcconfig"; path = "Target Support Files/Pods-nails project/Pods-nails project.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +99,8 @@
 			children = (
 				441511A627DE404B008149C0 /* ChangeDateDelegate.swift */,
 				447F08A227F1DCB600B31D1E /* RegistrationCompleteDelegate.swift */,
+				44D97E7927F376F60084557C /* dateIsAvalible.swift */,
+				44D97E7B27F3827A0084557C /* checkForConnection.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -160,6 +170,7 @@
 		44A530D027D77F5400D1A03D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				44D97E7D27F382F00084557C /* NoConnectionViewController */,
 				44D97E4F27F318FE0084557C /* MyWorksDescription */,
 				44D97E4427F30E240084557C /* MyWorksViewController */,
 				4491702B27DA384E001789F8 /* RegistrationViewController */,
@@ -222,6 +233,15 @@
 				44D97E5127F319220084557C /* MyWorksDescriptionViewController.xib */,
 			);
 			path = MyWorksDescription;
+			sourceTree = "<group>";
+		};
+		44D97E7D27F382F00084557C /* NoConnectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44D97E7E27F383090084557C /* NoConnectionViewController.swift */,
+				44D97E7F27F383090084557C /* NoConnectionViewController.xib */,
+			);
+			path = NoConnectionViewController;
 			sourceTree = "<group>";
 		};
 		905F59275673C82E9849527B /* Pods */ = {
@@ -305,6 +325,7 @@
 				44A530C627D77F1E00D1A03D /* Assets.xcassets in Resources */,
 				4491702F27DA386C001789F8 /* RegistrationViewController.xib in Resources */,
 				44A530C427D77F1E00D1A03D /* Main.storyboard in Resources */,
+				44D97E8127F383090084557C /* NoConnectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,12 +379,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4491702E27DA386C001789F8 /* RegistrationViewController.swift in Sources */,
+				44D97E8027F383090084557C /* NoConnectionViewController.swift in Sources */,
 				44B8ED8127D7B17300B2B41F /* DatePickerViewController.swift in Sources */,
 				441511A727DE404B008149C0 /* ChangeDateDelegate.swift in Sources */,
 				44A530D427D77F9800D1A03D /* MainMenuViewController.swift in Sources */,
+				44D97E7A27F376F60084557C /* dateIsAvalible.swift in Sources */,
 				44D97E4D27F30FB80084557C /* MyWorksCell.swift in Sources */,
 				4491703327DA3D24001789F8 /* RegistrationCellTableViewCell.swift in Sources */,
 				44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */,
+				44D97E7C27F3827A0084557C /* checkForConnection.swift in Sources */,
 				4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */,
 				44D97E5227F319220084557C /* MyWorksDescriptionViewController.swift in Sources */,
 				44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */,
@@ -521,9 +545,10 @@
 				DEVELOPMENT_TEAM = L57LZJ693P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nails project/Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = MainMenuViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -550,9 +575,10 @@
 				DEVELOPMENT_TEAM = L57LZJ693P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "nails project/Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = MainMenuViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

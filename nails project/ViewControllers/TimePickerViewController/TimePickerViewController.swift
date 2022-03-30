@@ -15,21 +15,37 @@ class TimePickerViewController: UIViewController {
     @IBOutlet weak var twoPmOutlet: UIButton!
     @IBOutlet weak var threePmOutlet: UIButton!
     
+    @IBOutlet weak var loaderIndicator: UIActivityIndicatorView!
+    
     let ref = Database.database(url: "https://nailsproject-9b8b3-default-rtdb.europe-west1.firebasedatabase.app/").reference()
     
     var dateText: String = ""
     var buttonSelected: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Свободные окошки"
-        date.text = dateText
+//        title = "Свободные окошки"
+//        date.text = dateText
         registrationVC.date = dateText
+        
+        onePmOutlet.isEnabled = false
+        twoPmOutlet.isEnabled = false
+        threePmOutlet.isEnabled = false
+        
+        onePmOutlet.isHidden = true
+        twoPmOutlet.isHidden = true
+        threePmOutlet.isHidden = true
+        
+        title = ""
+        date.text = ""
+        
         checkForAvalibility()
         secondCheckForAvalibility()
         thirdCheckForAvalibility()
         
         registrationVC.completeRegistration = self
     }
+    
     let registrationVC = RegistrationViewController(nibName: String(describing: RegistrationViewController.self), bundle: nil)
     
         
@@ -57,12 +73,16 @@ class TimePickerViewController: UIViewController {
         ref.child("\(dateText)/Час дня").observeSingleEvent(of: .value) {
             (snapshot) in
             let data = snapshot.value as? [String:String]
-            guard let data = data else {return}
+            guard let data = data else {
+                self.onePmOutlet.isEnabled = true
+                self.onePmOutlet.isHidden = false
+                return
+            }
             print(data)
                 self.onePmOutlet.setTitle("Запись занята", for: .normal)
                 self.onePmOutlet.layer.borderColor = UIColor.red.cgColor
                 self.onePmOutlet.layer.borderWidth = 1
-                self.onePmOutlet.isEnabled = false
+            self.onePmOutlet.isHidden = false
     }
 }
     
@@ -70,12 +90,16 @@ class TimePickerViewController: UIViewController {
         ref.child("\(dateText)/Два часа дня").observeSingleEvent(of: .value) {
             (snapshot) in
             let data = snapshot.value as? [String:String]
-            guard let data = data else {return}
+            guard let data = data else {
+                self.twoPmOutlet.isEnabled = true
+                self.twoPmOutlet.isHidden = false
+                return
+            }
             print(data)
                 self.twoPmOutlet.setTitle("Запись занята", for: .normal)
                 self.twoPmOutlet.layer.borderColor = UIColor.red.cgColor
                 self.twoPmOutlet.layer.borderWidth = 1
-                self.twoPmOutlet.isEnabled = false
+            self.twoPmOutlet.isHidden = false
     }
 }
     
@@ -83,15 +107,27 @@ class TimePickerViewController: UIViewController {
         ref.child("\(dateText)/Три часа дня").observeSingleEvent(of: .value) {
                 (snapshot) in
                 let data = snapshot.value as? [String:String]
-                guard let data = data else {return}
+                guard let data = data else {
+                    self.threePmOutlet.isEnabled = true
+                    self.threePmOutlet.isHidden = false
+                    self.date.text = self.dateText
+                    self.title = "Свободные окошки"
+                    self.loaderIndicator.isHidden = true
+                    return
+                }
             print(data)
                     self.threePmOutlet.setTitle("Запись занята", for: .normal)
                     self.threePmOutlet.layer.borderColor = UIColor.red.cgColor
                     self.threePmOutlet.layer.borderWidth = 1
-                    self.threePmOutlet.isEnabled = false
+            self.threePmOutlet.isHidden = false
+            self.date.text = self.dateText
+            self.title = "Свободные окошки"
+            self.loaderIndicator.isHidden = true
     }
     
 }
+    
+
     
 }
     
@@ -120,4 +156,5 @@ extension TimePickerViewController: RegistrationComplete {
         }
     }
 }
+
 
