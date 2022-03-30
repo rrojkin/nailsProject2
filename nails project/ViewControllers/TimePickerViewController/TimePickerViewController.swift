@@ -17,6 +17,8 @@ class TimePickerViewController: UIViewController {
     
     @IBOutlet weak var loaderIndicator: UIActivityIndicatorView!
     
+    var dateForFireBase: String = ""
+    
     let ref = Database.database(url: "https://nailsproject-9b8b3-default-rtdb.europe-west1.firebasedatabase.app/").reference()
     
     var dateText: String = ""
@@ -39,6 +41,7 @@ class TimePickerViewController: UIViewController {
         title = ""
         date.text = ""
         
+        
         checkForAvalibility()
         secondCheckForAvalibility()
         thirdCheckForAvalibility()
@@ -51,28 +54,33 @@ class TimePickerViewController: UIViewController {
         
     @IBAction func onePmButton(_ sender: Any) {
         navigationController?.pushViewController(registrationVC, animated: true)
-        registrationVC.time = "Час дня"
+        registrationVC.time = "one"
         buttonSelected = 1
+        registrationVC.dateForFireBase = dateForFireBase
     }
                                     
     
     @IBAction func twoPmButton(_ sender: Any) {
         navigationController?.pushViewController(registrationVC, animated: true)
-        registrationVC.time = "Два часа дня"
+        registrationVC.time = "two"
         buttonSelected = 2
+        registrationVC.dateForFireBase = dateForFireBase
     }
     
     @IBAction func threePmButton(_ sender: Any) {
         navigationController?.pushViewController(registrationVC, animated: true)
-        registrationVC.time = "Три часа дня"
+        registrationVC.time = "three"
         buttonSelected = 3
+        registrationVC.dateForFireBase = dateForFireBase
     }
     
     
     func checkForAvalibility(){
-        ref.child("\(dateText)/Час дня").observeSingleEvent(of: .value) {
+        print(dateForFireBase)
+        ref.child("Dates/\(dateForFireBase)/one").observeSingleEvent(of: .value) {
             (snapshot) in
             let data = snapshot.value as? [String:String]
+            print(snapshot.key)
             guard let data = data else {
                 self.onePmOutlet.isEnabled = true
                 self.onePmOutlet.isHidden = false
@@ -87,8 +95,9 @@ class TimePickerViewController: UIViewController {
 }
     
     func secondCheckForAvalibility() {
-        ref.child("\(dateText)/Два часа дня").observeSingleEvent(of: .value) {
+        ref.child("Dates/\(dateForFireBase)/two").observeSingleEvent(of: .value) {
             (snapshot) in
+            print(snapshot.key)
             let data = snapshot.value as? [String:String]
             guard let data = data else {
                 self.twoPmOutlet.isEnabled = true
@@ -104,8 +113,9 @@ class TimePickerViewController: UIViewController {
 }
     
     func thirdCheckForAvalibility() {
-        ref.child("\(dateText)/Три часа дня").observeSingleEvent(of: .value) {
+        ref.child("Dates/\(dateForFireBase)/three").observeSingleEvent(of: .value) {
                 (snapshot) in
+            print(snapshot.key)
                 let data = snapshot.value as? [String:String]
                 guard let data = data else {
                     self.threePmOutlet.isEnabled = true

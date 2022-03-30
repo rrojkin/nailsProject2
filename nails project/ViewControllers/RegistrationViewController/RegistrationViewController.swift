@@ -24,6 +24,7 @@ class RegistrationViewController: UIViewController, UITableViewDelegate {
     
     var date: String = ""
     var time: String = ""
+    var dateForFireBase: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,7 @@ class RegistrationViewController: UIViewController, UITableViewDelegate {
         ServiceTable.dataSource = self
         ServiceTable.delegate = self
         
+        
     }
     
     let ref = Database.database(url: "https://nailsproject-9b8b3-default-rtdb.europe-west1.firebasedatabase.app/").reference()
@@ -49,9 +51,9 @@ class RegistrationViewController: UIViewController, UITableViewDelegate {
         if nameInput.text?.count == 0 || phoneInput.text?.count == 0 || socialMediaInput.text?.count == 0 {
             showAlert()
         } else {
-            ref.child("\(date)/\(time)/Name").setValue(nameInput.text)
-            ref.child("\(date)/\(time)/PhoneNumber").setValue(phoneInput.text)
-            ref.child("\(date)/\(time)/SocialMedia").setValue(socialMediaInput.text)
+            ref.child("Dates/\(dateForFireBase)/\(time)/Name").setValue(nameInput.text)
+            ref.child("Dates/\(dateForFireBase)/\(time)/PhoneNumber").setValue(phoneInput.text)
+            ref.child("Dates/\(dateForFireBase)/\(time)/SocialMedia").setValue(socialMediaInput.text)
          
             navigationController?.popViewController(animated: true)
             nameInput.text = ""

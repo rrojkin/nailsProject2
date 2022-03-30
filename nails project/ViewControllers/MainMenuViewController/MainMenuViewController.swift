@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class MainMenuViewController: UIViewController {
 
@@ -19,9 +20,14 @@ class MainMenuViewController: UIViewController {
     
     var isFirstLaunch: Bool = true
     var timer: Timer?
+    var fullDatesAtStart = [String]()
+    
+    let ref = Database.database(url: "https://nailsproject-9b8b3-default-rtdb.europe-west1.firebasedatabase.app/").reference()
+    var dataBaseHandle: DatabaseHandle?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         registrationButton.addTarget(self, action: #selector(holdRelease), for: .touchUpInside);
       registrationButton.addTarget(self, action: #selector(heldDown), for: .touchDown)
@@ -32,7 +38,21 @@ class MainMenuViewController: UIViewController {
        myWorksButton.addTarget(self, action: #selector(buttonHeldAndReleased), for: .touchDragExit)
 
         
+        addToPostData()
     }
+    
+    func addToPostData() {
+           dataBaseHandle = ref.child("Dates").observe(.childAdded, with: {
+               (snapshot) in
+               if snapshot.hasChild("one"),
+                  snapshot.hasChild("two"),
+                  snapshot.hasChild("three") {
+                   self.fullDatesAtStart.append(snapshot.key)
+                   print(self.fullDatesAtStart)
+               }
+           })
+   
+       }
     
     
 
@@ -96,8 +116,9 @@ class MainMenuViewController: UIViewController {
 
     @IBAction func onlineRegistrationAction(_ sender: Any) {
         
+        addToPostData()
         let datePickerVC = DatePickerViewController(nibName: String(describing: DatePickerViewController.self), bundle: nil)
-        
+        datePickerVC.postData = self.fullDatesAtStart
         navigationController?.pushViewController(datePickerVC, animated: true)
         
         
