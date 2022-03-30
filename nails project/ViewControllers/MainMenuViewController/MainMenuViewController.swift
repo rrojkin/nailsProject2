@@ -48,7 +48,6 @@ class MainMenuViewController: UIViewController {
                   snapshot.hasChild("two"),
                   snapshot.hasChild("three") {
                    self.fullDatesAtStart.append(snapshot.key)
-                   print(self.fullDatesAtStart)
                }
            })
    
@@ -63,8 +62,6 @@ class MainMenuViewController: UIViewController {
            
             self.registrationButton.frame.origin.x += 1
             self.registrationButton.frame.origin.y += 1
-            print(self.registrationButton.frame.origin.y)
-            print(self.registrationShadow.frame.origin.y)
             if self.registrationButton.frame.origin.y >= self.registrationShadow.frame.origin.y {
                 self.timer?.invalidate()
                 self.timer = nil
@@ -78,8 +75,6 @@ class MainMenuViewController: UIViewController {
            
             self.myWorksButton.frame.origin.x += 1
             self.myWorksButton.frame.origin.y += 1
-            print(self.myWorksButton.frame.origin.y)
-            print(self.myWorksShadow.frame.origin.y)
             if self.myWorksButton.frame.origin.y >= self.myWorksShadow.frame.origin.y {
                 self.timer?.invalidate()
                 self.timer = nil

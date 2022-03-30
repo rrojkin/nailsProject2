@@ -76,11 +76,9 @@ class TimePickerViewController: UIViewController {
     
     
     func checkForAvalibility(){
-        print(dateForFireBase)
         ref.child("Dates/\(dateForFireBase)/one").observeSingleEvent(of: .value) {
             (snapshot) in
             let data = snapshot.value as? [String:String]
-            print(snapshot.key)
             guard let data = data else {
                 self.onePmOutlet.isEnabled = true
                 self.onePmOutlet.isHidden = false
@@ -97,7 +95,6 @@ class TimePickerViewController: UIViewController {
     func secondCheckForAvalibility() {
         ref.child("Dates/\(dateForFireBase)/two").observeSingleEvent(of: .value) {
             (snapshot) in
-            print(snapshot.key)
             let data = snapshot.value as? [String:String]
             guard let data = data else {
                 self.twoPmOutlet.isEnabled = true
@@ -115,7 +112,6 @@ class TimePickerViewController: UIViewController {
     func thirdCheckForAvalibility() {
         ref.child("Dates/\(dateForFireBase)/three").observeSingleEvent(of: .value) {
                 (snapshot) in
-            print(snapshot.key)
                 let data = snapshot.value as? [String:String]
                 guard let data = data else {
                     self.threePmOutlet.isEnabled = true
