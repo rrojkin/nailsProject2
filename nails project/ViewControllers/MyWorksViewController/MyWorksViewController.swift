@@ -51,9 +51,11 @@ class MyWorksViewController: UIViewController {
 
 extension MyWorksViewController: UITableViewDelegate {
     
+    
 }
 
 extension MyWorksViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return nails.count
     }
@@ -68,9 +70,12 @@ extension MyWorksViewController: UITableViewDataSource {
         let descriptionVC = MyWorksDescriptionViewController(nibName: String(describing: MyWorksDescriptionViewController.self), bundle: nil)
         descriptionVC.imageNumber = indexPath.row
         descriptionVC.nails = nails
+        print(indexPath)
         navigationController?.pushViewController(descriptionVC, animated: true)
         tableView.reloadData()
     }
+    
+   
     
     
 }

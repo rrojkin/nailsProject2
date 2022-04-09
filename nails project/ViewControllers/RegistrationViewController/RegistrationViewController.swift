@@ -33,7 +33,7 @@ class RegistrationViewController: UIViewController, UITableViewDelegate {
         ServiceTable.register(nib, forCellReuseIdentifier: String(describing: RegistrationCellTableViewCell.self))
         
         self.hideKeyboardWhenTappedAround()
-        self.ServiceTable.allowsMultipleSelection = true
+        self.ServiceTable.allowsMultipleSelection = false
         self.ServiceTable.allowsMultipleSelectionDuringEditing = true
         
         ServiceTable.layer.borderWidth = 1

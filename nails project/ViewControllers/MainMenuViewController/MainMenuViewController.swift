@@ -27,6 +27,22 @@ class MainMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+                    
+        registrationButton.layer.borderWidth = 1
+        registrationButton.layer.borderColor = UIColor.black.cgColor
+        registrationButton.layer.cornerRadius = 5
+        
+        registrationShadow.layer.cornerRadius = 5
+        registrationShadow.layer.borderColor = UIColor.black.cgColor
+        registrationShadow.layer.borderWidth = 70
+        
+        myWorksShadow.layer.cornerRadius = 5
+        myWorksShadow.layer.borderColor = UIColor.black.cgColor
+        myWorksShadow.layer.borderWidth = 70
+        
+        myWorksButton.layer.borderWidth = 1
+        myWorksButton.layer.borderColor = UIColor.black.cgColor
+        myWorksButton.layer.cornerRadius = 5
         
         
         registrationButton.addTarget(self, action: #selector(holdRelease), for: .touchUpInside);
@@ -58,6 +74,7 @@ class MainMenuViewController: UIViewController {
     //target functions
     @objc func heldDown()
     {
+        HapticsManager.shared.vibrate()
         timer = Timer.scheduledTimer(withTimeInterval: 0.005, repeats: true, block: { _ in
            
             self.registrationButton.frame.origin.x += 1
@@ -71,6 +88,7 @@ class MainMenuViewController: UIViewController {
     
     @objc func heldDownMyWorks()
     {
+        HapticsManager.shared.vibrate()
         timer = Timer.scheduledTimer(withTimeInterval: 0.005, repeats: true, block: { _ in
            
             self.myWorksButton.frame.origin.x += 1
@@ -110,7 +128,6 @@ class MainMenuViewController: UIViewController {
    
 
     @IBAction func onlineRegistrationAction(_ sender: Any) {
-        
         addToPostData()
         let datePickerVC = DatePickerViewController(nibName: String(describing: DatePickerViewController.self), bundle: nil)
         datePickerVC.postData = self.fullDatesAtStart
@@ -121,9 +138,49 @@ class MainMenuViewController: UIViewController {
      
     
     @IBAction func myWorksAction(_ sender: Any) {
-        let myWorksVC = MyWorksViewController(nibName: String(describing: MyWorksViewController.self), bundle: nil)
+        let myWorksVC = ViewController(nibName: String(describing: ViewController.self), bundle: nil)
         navigationController?.pushViewController(myWorksVC, animated: true)
     }
+    
+    @IBAction func goToInstagram(_ sender: Any) {
+        showAlert(name: "Instagram")
+    }
+    
+    @IBAction func goToTelegram(_ sender: Any) {
+        showAlert(name: "Telegram")
+    }
+    
+    func showAlert(name: String) {
+        let alert = UIAlertController(title: "Вы хотите перейти в \(name)?", message: "", preferredStyle: .alert) //.alert
+        let okAction = UIAlertAction(title: "ОК", style: .default) { result in
+            if name == "Instagram" {
+                let instagramHooks = "https://www.instagram.com/manicure.haus/"
+                let instagramUrl = URL(string: instagramHooks)!
+                if UIApplication.shared.canOpenURL(instagramUrl)
+                {
+                    UIApplication.shared.open(instagramUrl)
+                } else {
+                    UIApplication.shared.open(URL(string: "http://instagram.com/")!)
+                }
+            } else {
+                let instagramHooks = "https://t.me/darya4700"
+                let instagramUrl = URL(string: instagramHooks)!
+                if UIApplication.shared.canOpenURL(instagramUrl)
+                {
+                    UIApplication.shared.open(instagramUrl)
+                } else {
+                    UIApplication.shared.open(URL(string: "http://t.me/")!)
+                }
+            }
+        }
+        let noAction = UIAlertAction(title: "NO", style: .cancel)
+        alert.addAction(okAction)
+        alert.addAction(noAction)
+        
+        present(alert, animated: true)
+    }
+    
+    
     
 }
 

@@ -31,6 +31,7 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
         let loc = Locale(identifier: "rus")
         self.viewOutlet.locale = loc
         viewOutlet.appearance.headerDateFormat = "MMMM"
+        
     }
     
 
@@ -39,11 +40,24 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
     
     var stringDate: String = ""
     
+    
+    func showAlert() {
+    let alert = UIAlertController(title: "Упс!", message: "На эту дату нет свободных мест :(", preferredStyle: .alert) //.alert
+    let okAction = UIAlertAction(title: "Выбрать другую дату", style: .default)
+    alert.addAction(okAction)
+    
+    present(alert, animated: true)
+        HapticsManager.shared.selectionVibrate(for: .error)
+    }
+    
    
     
    
 //    var fullDates = [String]()
     func calendar(_ calendar: FSCalendar, shouldSelect date: Date, at monthPosition: FSCalendarMonthPosition) -> Bool {
+        if date .compare(Date()) == .orderedAscending {
+        return false
+    }
         for n in postData {
             
             let loc = Locale(identifier: "rus")
@@ -51,15 +65,12 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
         let formatter = DateFormatter()
         formatter.locale = loc
         formatter.dateFormat =  "MM-dd-yyyy"
-//        let string = formatter.string(from: date)
+
         guard let excludedDate = formatter.date(from: "\(n)") else { return true }
         if date.compare(excludedDate) == .orderedSame{
-            return false
+            return true
         }
-            if date .compare(Date()) == .orderedAscending {
-            return false
-        }
-        }
+    }
         return true
     }
     
@@ -75,7 +86,7 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
 //        let string = formatter.string(from: date)
             guard let excludedDate = formatter.date(from: "\(n)") else { return nil }
         if date.compare(excludedDate) == .orderedSame{
-            return .purple
+            return .red
         }
         }
         return nil
@@ -90,6 +101,15 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
         formatter.locale = loc
         
         formatter.dateFormat = "MM-dd-yyyy"
+        
+        for n in postData {
+            guard let excludedDate = formatter.date(from: "\(n)") else { return }
+            if date.compare(excludedDate) == .orderedSame{
+                showAlert()
+                return
+            }
+        }
+        
         let dateForFireBase = formatter.string(from: date)
         
         formatter.dateFormat =  "d MMMM , EEEE, yyyy"
