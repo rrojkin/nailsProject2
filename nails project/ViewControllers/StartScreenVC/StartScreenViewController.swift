@@ -12,6 +12,10 @@ class StartScreenViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tabBar.layer.borderWidth = 0.5
+        tabBar.layer.borderColor = UIColor.gray.cgColor
+        
+        
         let mainMenuVC = MainMenuViewController()
         let profileVC = ProfileViewController()
         let myworksVC = ViewController()
@@ -31,6 +35,7 @@ class StartScreenViewController: UITabBarController {
         for i in 0..<items.count {
             items[i].image = UIImage(systemName: images[i])
         }
+        
     }
 
 

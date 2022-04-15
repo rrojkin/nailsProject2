@@ -27,8 +27,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.rootViewController = UINavigationController(rootViewController:  NoConnectionViewController(nibName: String(describing: NoConnectionViewController.self), bundle: nil))
             window?.makeKeyAndVisible()
         }
-       
-    
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -61,4 +59,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
+
+
 
