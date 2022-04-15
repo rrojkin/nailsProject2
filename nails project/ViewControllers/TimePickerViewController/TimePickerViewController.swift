@@ -11,6 +11,9 @@ import FirebaseDatabase
 class TimePickerViewController: UIViewController {
     @IBOutlet weak var date: UILabel!
     
+    @IBOutlet weak var emptyTimeslots: UILabel!
+    @IBOutlet weak var wholeView: UIView!
+    @IBOutlet weak var timeView: UIView!
     @IBOutlet weak var onePmOutlet: UIButton!
     @IBOutlet weak var twoPmOutlet: UIButton!
     @IBOutlet weak var threePmOutlet: UIButton!
@@ -26,8 +29,11 @@ class TimePickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        title = "Свободные окошки"
-//        date.text = dateText
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(deleteView))
+        wholeView.addGestureRecognizer(tap)
+        
+        timeView.layer.cornerRadius = 20
         registrationVC.date = dateText
         
         onePmOutlet.isEnabled = false
@@ -117,7 +123,7 @@ class TimePickerViewController: UIViewController {
                     self.threePmOutlet.isEnabled = true
                     self.threePmOutlet.isHidden = false
                     self.date.text = self.dateText
-                    self.title = "Свободные окошки"
+                    self.emptyTimeslots.text = "Свободные окошки"
                     self.loaderIndicator.isHidden = true
                     return
                 }
@@ -127,11 +133,15 @@ class TimePickerViewController: UIViewController {
                     self.threePmOutlet.layer.borderWidth = 1
             self.threePmOutlet.isHidden = false
             self.date.text = self.dateText
-            self.title = "Свободные окошки"
+            self.emptyTimeslots.text = "Свободные окошки"
             self.loaderIndicator.isHidden = true
     }
     
 }
+    
+    @objc func deleteView() {
+        navigationController?.dismiss(animated: true)
+    }
     
 
     

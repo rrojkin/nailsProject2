@@ -13,6 +13,7 @@
                 <outlet property="popUpView" destination="eoC-on-6Sb" id="yaz-4g-RoR"/>
                 <outlet property="tableView" destination="oGs-sG-OZ1" id="zHw-Lv-lyQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wholeView" destination="MBX-8X-Kc8" id="0j5-Ha-cHh"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -50,7 +51,7 @@
                         <constraint firstAttribute="height" constant="500" id="ppF-To-Iw7"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMQ-hZ-cgy">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMQ-hZ-cgy">
                     <rect key="frame" x="2" y="168" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="FmW-fq-AfE"/>
@@ -65,12 +66,19 @@
                         <action selector="closeDescription:" destination="-1" eventType="touchUpInside" id="108-Xr-FbK"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBX-8X-Kc8">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <constraints>
                 <constraint firstItem="eoC-on-6Sb" firstAttribute="top" secondItem="NMQ-hZ-cgy" secondAttribute="bottom" constant="-30" id="4LR-B5-fIU"/>
+                <constraint firstItem="MBX-8X-Kc8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JvG-eK-T91"/>
                 <constraint firstItem="eoC-on-6Sb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OFw-MD-oSu"/>
                 <constraint firstItem="eoC-on-6Sb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZrS-6R-nLi"/>
+                <constraint firstItem="MBX-8X-Kc8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cBj-BR-00U"/>
+                <constraint firstAttribute="bottom" secondItem="MBX-8X-Kc8" secondAttribute="bottom" id="hjk-lj-hdF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MBX-8X-Kc8" secondAttribute="trailing" id="n34-KW-dgJ"/>
                 <constraint firstItem="eoC-on-6Sb" firstAttribute="leading" secondItem="NMQ-hZ-cgy" secondAttribute="trailing" constant="-30" id="vwS-g7-IMo"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="67.633928571428569"/>

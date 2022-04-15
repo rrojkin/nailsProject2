@@ -13,6 +13,8 @@ protocol shouldAddBlurDelegate {
 
 class NailsDescriptionViewController: UIViewController {
     
+    @IBOutlet weak var wholeView: UIView!
+    
     var dataSample = [UIImage(named: "nails1before"), UIImage(named: "nails1"), UIImage(named: "nails2before"), UIImage(named: "nails2"),UIImage(named: "nails3before"), UIImage(named: "nails3"),UIImage(named: "nails1"),UIImage(named: "nails2"),UIImage(named: "nails3"),UIImage(named: "nails1"),UIImage(named: "nails2"),UIImage(named: "nails3"),UIImage(named: "nails1"),UIImage(named: "nails2"),UIImage(named: "nails3")]
     
     var numberInData = 0
@@ -26,6 +28,7 @@ class NailsDescriptionViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.bringSubviewToFront(popUpView)
         
         popUpView.layer.cornerRadius = 5
         tableView.layer.cornerRadius = popUpView.layer.cornerRadius
@@ -37,6 +40,9 @@ class NailsDescriptionViewController: UIViewController {
         
         self.tableView!.register(nib, forCellWithReuseIdentifier: String(describing: DescriptionCollectionViewCell.self))
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(closeViewWhenTapped))
+        wholeView.addGestureRecognizer(tap)
+        
     }
         
     override func viewDidDisappear(_ animated: Bool) {
@@ -47,6 +53,10 @@ class NailsDescriptionViewController: UIViewController {
     @IBAction func closeDescription(_ sender: Any) {
         let blur = shouldBeBlured(beBlured: true)
         delegate?.addBlur(blur: blur)
+        navigationController?.dismiss(animated: true)
+    }
+    
+    @objc func closeViewWhenTapped() {
         navigationController?.dismiss(animated: true)
     }
 }

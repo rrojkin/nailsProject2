@@ -78,19 +78,25 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
         
         for n in postData {
             
-            let loc = Locale(identifier: "rus")
-            
+        let loc = Locale(identifier: "rus")
+        
         let formatter = DateFormatter()
         formatter.locale = loc
         formatter.dateFormat =  "MM-dd-yyyy"
-//        let string = formatter.string(from: date)
+        
             guard let excludedDate = formatter.date(from: "\(n)") else { return nil }
-        if date.compare(excludedDate) == .orderedSame{
+        if date.compare(excludedDate) == .orderedSame,
+           date.compare(calendar.today!) != .orderedAscending {
             return .red
         }
-        }
-        return nil
     }
+        if date.compare(Date()) == .orderedAscending,
+           date.compare(calendar.today!) != .orderedSame {
+            return .gray
+        }
+        calendar.appearance.todayColor = .blue
+        return nil
+}
             
 
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
@@ -99,6 +105,8 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
 
         let formatter = DateFormatter()
         formatter.locale = loc
+        
+        
         
         formatter.dateFormat = "MM-dd-yyyy"
         

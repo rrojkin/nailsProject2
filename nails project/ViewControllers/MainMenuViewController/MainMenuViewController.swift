@@ -71,7 +71,6 @@ class MainMenuViewController: UIViewController {
     
     
 
-    //target functions
     @objc func heldDown()
     {
         HapticsManager.shared.vibrate()
