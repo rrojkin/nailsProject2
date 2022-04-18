@@ -29,18 +29,14 @@
 		44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A530BC27D77F1E00D1A03D /* AppDelegate.swift */; };
 		44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A530BE27D77F1E00D1A03D /* SceneDelegate.swift */; };
 		44A530C427D77F1E00D1A03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A530C227D77F1E00D1A03D /* Main.storyboard */; };
-		44A530C627D77F1E00D1A03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A530C527D77F1E00D1A03D /* Assets.xcassets */; };
+		44A530C627D77F1E00D1A03D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A530C527D77F1E00D1A03D /* Images.xcassets */; };
 		44A530C927D77F1E00D1A03D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A530C727D77F1E00D1A03D /* LaunchScreen.storyboard */; };
 		44A530D427D77F9800D1A03D /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A530D227D77F9800D1A03D /* MainMenuViewController.swift */; };
 		44A530D527D77F9800D1A03D /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A530D327D77F9800D1A03D /* MainMenuViewController.xib */; };
 		44B8ED8127D7B17300B2B41F /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8ED8027D7B17300B2B41F /* DatePickerViewController.swift */; };
 		44D3208C27D784A900FFBCD0 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D3208A27D784A900FFBCD0 /* DatePickerViewController.xib */; };
-		44D97E4727F30E430084557C /* MyWorksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E4527F30E430084557C /* MyWorksViewController.swift */; };
-		44D97E4827F30E430084557C /* MyWorksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E4627F30E430084557C /* MyWorksViewController.xib */; };
 		44D97E4D27F30FB80084557C /* MyWorksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E4B27F30FB80084557C /* MyWorksCell.swift */; };
 		44D97E4E27F30FB80084557C /* MyWorksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E4C27F30FB80084557C /* MyWorksCell.xib */; };
-		44D97E5227F319220084557C /* MyWorksDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E5027F319220084557C /* MyWorksDescriptionViewController.swift */; };
-		44D97E5327F319220084557C /* MyWorksDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E5127F319220084557C /* MyWorksDescriptionViewController.xib */; };
 		44D97E7A27F376F60084557C /* dateIsAvalible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E7927F376F60084557C /* dateIsAvalible.swift */; };
 		44D97E7C27F3827A0084557C /* checkForConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E7B27F3827A0084557C /* checkForConnection.swift */; };
 		44D97E8027F383090084557C /* NoConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E7E27F383090084557C /* NoConnectionViewController.swift */; };
@@ -51,6 +47,14 @@
 		44D97E9527F5DEDF0084557C /* NailsDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E9327F5DEDF0084557C /* NailsDescriptionViewController.swift */; };
 		44D97E9627F5DEDF0084557C /* NailsDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D97E9427F5DEDF0084557C /* NailsDescriptionViewController.xib */; };
 		44D97E9827F5EF2F0084557C /* addBlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D97E9727F5EF2F0084557C /* addBlurEffect.swift */; };
+		44FBA471280D7FB200C1234B /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBA46F280D7FB200C1234B /* TestCollectionViewController.swift */; };
+		44FBA472280D7FB200C1234B /* TestCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FBA470280D7FB200C1234B /* TestCollectionViewController.xib */; };
+		44FBA476280D7FD000C1234B /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBA474280D7FD000C1234B /* TestCollectionViewCell.swift */; };
+		44FBA477280D7FD000C1234B /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FBA475280D7FD000C1234B /* TestCollectionViewCell.xib */; };
+		44FBA47A280D801100C1234B /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FBA478280D801100C1234B /* Photos.xcassets */; };
+		44FBA47B280D801100C1234B /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44FBA479280D801100C1234B /* Photos.plist */; };
+		44FBA47E280D802F00C1234B /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBA47D280D802F00C1234B /* Photos.swift */; };
+		44FBA480280D884C00C1234B /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBA47F280D884C00C1234B /* PinterestLayout.swift */; };
 		74D33E4AAFE05CB98ADE9F29 /* Pods_nails_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6418705750C1A187BA8ED259 /* Pods_nails_project.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,19 +82,15 @@
 		44A530BC27D77F1E00D1A03D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44A530BE27D77F1E00D1A03D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		44A530C327D77F1E00D1A03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		44A530C527D77F1E00D1A03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44A530C527D77F1E00D1A03D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		44A530C827D77F1E00D1A03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A530CA27D77F1E00D1A03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44A530D227D77F9800D1A03D /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		44A530D327D77F9800D1A03D /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
 		44B8ED8027D7B17300B2B41F /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		44D3208A27D784A900FFBCD0 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
-		44D97E4527F30E430084557C /* MyWorksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorksViewController.swift; sourceTree = "<group>"; };
-		44D97E4627F30E430084557C /* MyWorksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWorksViewController.xib; sourceTree = "<group>"; };
 		44D97E4B27F30FB80084557C /* MyWorksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorksCell.swift; sourceTree = "<group>"; };
 		44D97E4C27F30FB80084557C /* MyWorksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWorksCell.xib; sourceTree = "<group>"; };
-		44D97E5027F319220084557C /* MyWorksDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorksDescriptionViewController.swift; sourceTree = "<group>"; };
-		44D97E5127F319220084557C /* MyWorksDescriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWorksDescriptionViewController.xib; sourceTree = "<group>"; };
 		44D97E7927F376F60084557C /* dateIsAvalible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateIsAvalible.swift; sourceTree = "<group>"; };
 		44D97E7B27F3827A0084557C /* checkForConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkForConnection.swift; sourceTree = "<group>"; };
 		44D97E7E27F383090084557C /* NoConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoConnectionViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +101,14 @@
 		44D97E9327F5DEDF0084557C /* NailsDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NailsDescriptionViewController.swift; sourceTree = "<group>"; };
 		44D97E9427F5DEDF0084557C /* NailsDescriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NailsDescriptionViewController.xib; sourceTree = "<group>"; };
 		44D97E9727F5EF2F0084557C /* addBlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBlurEffect.swift; sourceTree = "<group>"; };
+		44FBA46F280D7FB200C1234B /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
+		44FBA470280D7FB200C1234B /* TestCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCollectionViewController.xib; sourceTree = "<group>"; };
+		44FBA474280D7FD000C1234B /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		44FBA475280D7FD000C1234B /* TestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCollectionViewCell.xib; sourceTree = "<group>"; };
+		44FBA478280D801100C1234B /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
+		44FBA479280D801100C1234B /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
+		44FBA47D280D802F00C1234B /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		44FBA47F280D884C00C1234B /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		6418705750C1A187BA8ED259 /* Pods_nails_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nails_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D5CD35790A94F604A471EF /* Pods-nails project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nails project.debug.xcconfig"; path = "Target Support Files/Pods-nails project/Pods-nails project.debug.xcconfig"; sourceTree = "<group>"; };
 		9A6F9174C6D71BEAB0CC2BA6 /* Pods-nails project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nails project.release.xcconfig"; path = "Target Support Files/Pods-nails project/Pods-nails project.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,7 +256,7 @@
 				44A530BC27D77F1E00D1A03D /* AppDelegate.swift */,
 				44A530BE27D77F1E00D1A03D /* SceneDelegate.swift */,
 				44A530C227D77F1E00D1A03D /* Main.storyboard */,
-				44A530C527D77F1E00D1A03D /* Assets.xcassets */,
+				44A7CA1C280C741A0062BC3A /* Assets */,
 				44A530C727D77F1E00D1A03D /* LaunchScreen.storyboard */,
 				447F08A627F1F28C00B31D1E /* GoogleService-Info.plist */,
 				44A530CA27D77F1E00D1A03D /* Info.plist */,
@@ -259,13 +267,12 @@
 		44A530D027D77F5400D1A03D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				44FBA46E280D7F9400C1234B /* TestCollectionViewController */,
 				44186A4B2801FDE500504B74 /* StartScreenVC */,
 				44186A462801FB5500504B74 /* ProfileVC */,
 				449A8F0D27F715B000BAD0CE /* AllWorksViewController */,
 				44D97E9227F5DE900084557C /* nailsDescriptionAlert */,
 				44D97E7D27F382F00084557C /* NoConnectionViewController */,
-				44D97E4F27F318FE0084557C /* MyWorksDescription */,
-				44D97E4427F30E240084557C /* MyWorksViewController */,
 				4491702B27DA384E001789F8 /* RegistrationViewController */,
 				4491702627DA31F9001789F8 /* TimePickerViewController */,
 				44D3208827D7848600FFBCD0 /* DatePickerViewController */,
@@ -283,6 +290,16 @@
 			path = MainMenuViewController;
 			sourceTree = "<group>";
 		};
+		44A7CA1C280C741A0062BC3A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				44FBA479280D801100C1234B /* Photos.plist */,
+				44FBA478280D801100C1234B /* Photos.xcassets */,
+				44A530C527D77F1E00D1A03D /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		44D3208827D7848600FFBCD0 /* DatePickerViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,15 +307,6 @@
 				44D3208A27D784A900FFBCD0 /* DatePickerViewController.xib */,
 			);
 			path = DatePickerViewController;
-			sourceTree = "<group>";
-		};
-		44D97E4427F30E240084557C /* MyWorksViewController */ = {
-			isa = PBXGroup;
-			children = (
-				44D97E4527F30E430084557C /* MyWorksViewController.swift */,
-				44D97E4627F30E430084557C /* MyWorksViewController.xib */,
-			);
-			path = MyWorksViewController;
 			sourceTree = "<group>";
 		};
 		44D97E4927F30F840084557C /* Cells */ = {
@@ -321,15 +329,6 @@
 			path = MyWorksCell;
 			sourceTree = "<group>";
 		};
-		44D97E4F27F318FE0084557C /* MyWorksDescription */ = {
-			isa = PBXGroup;
-			children = (
-				44D97E5027F319220084557C /* MyWorksDescriptionViewController.swift */,
-				44D97E5127F319220084557C /* MyWorksDescriptionViewController.xib */,
-			);
-			path = MyWorksDescription;
-			sourceTree = "<group>";
-		};
 		44D97E7D27F382F00084557C /* NoConnectionViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +345,35 @@
 				44D97E9427F5DEDF0084557C /* NailsDescriptionViewController.xib */,
 			);
 			path = nailsDescriptionAlert;
+			sourceTree = "<group>";
+		};
+		44FBA46E280D7F9400C1234B /* TestCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				44FBA47C280D802500C1234B /* Photos */,
+				44FBA473280D7FBB00C1234B /* TestCollectionViewCell */,
+				44FBA46F280D7FB200C1234B /* TestCollectionViewController.swift */,
+				44FBA470280D7FB200C1234B /* TestCollectionViewController.xib */,
+				44FBA47F280D884C00C1234B /* PinterestLayout.swift */,
+			);
+			path = TestCollectionViewController;
+			sourceTree = "<group>";
+		};
+		44FBA473280D7FBB00C1234B /* TestCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				44FBA474280D7FD000C1234B /* TestCollectionViewCell.swift */,
+				44FBA475280D7FD000C1234B /* TestCollectionViewCell.xib */,
+			);
+			path = TestCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		44FBA47C280D802500C1234B /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				44FBA47D280D802F00C1234B /* Photos.swift */,
+			);
+			path = Photos;
 			sourceTree = "<group>";
 		};
 		905F59275673C82E9849527B /* Pods */ = {
@@ -419,19 +447,21 @@
 			files = (
 				44186A4A2801FB6B00504B74 /* ProfileViewController.xib in Resources */,
 				4491703427DA3D24001789F8 /* RegistrationCellTableViewCell.xib in Resources */,
+				44FBA47B280D801100C1234B /* Photos.plist in Resources */,
 				44A530D527D77F9800D1A03D /* MainMenuViewController.xib in Resources */,
 				44D97E9127F5D47A0084557C /* cellCollectionViewCell.xib in Resources */,
+				44FBA477280D7FD000C1234B /* TestCollectionViewCell.xib in Resources */,
 				44D97E4E27F30FB80084557C /* MyWorksCell.xib in Resources */,
 				447F08A727F1F28C00B31D1E /* GoogleService-Info.plist in Resources */,
-				44D97E5327F319220084557C /* MyWorksDescriptionViewController.xib in Resources */,
-				44D97E4827F30E430084557C /* MyWorksViewController.xib in Resources */,
+				44FBA472280D7FB200C1234B /* TestCollectionViewController.xib in Resources */,
+				44FBA47A280D801100C1234B /* Photos.xcassets in Resources */,
 				4491702A27DA3218001789F8 /* TimePickerViewController.xib in Resources */,
 				44D97E9627F5DEDF0084557C /* NailsDescriptionViewController.xib in Resources */,
 				449A8F1127F715C300BAD0CE /* ViewController.xib in Resources */,
 				44D3208C27D784A900FFBCD0 /* DatePickerViewController.xib in Resources */,
 				44A530C927D77F1E00D1A03D /* LaunchScreen.storyboard in Resources */,
 				44186A4F2801FDF600504B74 /* StartScreenViewController.xib in Resources */,
-				44A530C627D77F1E00D1A03D /* Assets.xcassets in Resources */,
+				44A530C627D77F1E00D1A03D /* Images.xcassets in Resources */,
 				4491702F27DA386C001789F8 /* RegistrationViewController.xib in Resources */,
 				44A530C427D77F1E00D1A03D /* Main.storyboard in Resources */,
 				449A8F1727F7498300BAD0CE /* DescriptionCollectionViewCell.xib in Resources */,
@@ -498,21 +528,23 @@
 				441511A727DE404B008149C0 /* ChangeDateDelegate.swift in Sources */,
 				44D97E9827F5EF2F0084557C /* addBlurEffect.swift in Sources */,
 				44186A4E2801FDF600504B74 /* StartScreenViewController.swift in Sources */,
+				44FBA476280D7FD000C1234B /* TestCollectionViewCell.swift in Sources */,
 				44A530D427D77F9800D1A03D /* MainMenuViewController.swift in Sources */,
 				44186A442801F61800504B74 /* Enums.swift in Sources */,
 				44D97E7A27F376F60084557C /* dateIsAvalible.swift in Sources */,
 				44D97E4D27F30FB80084557C /* MyWorksCell.swift in Sources */,
+				44FBA480280D884C00C1234B /* PinterestLayout.swift in Sources */,
 				4491703327DA3D24001789F8 /* RegistrationCellTableViewCell.swift in Sources */,
 				44A530BD27D77F1E00D1A03D /* AppDelegate.swift in Sources */,
+				44FBA471280D7FB200C1234B /* TestCollectionViewController.swift in Sources */,
 				449A8F1327F7312600BAD0CE /* classProfile.swift in Sources */,
 				44D97E7C27F3827A0084557C /* checkForConnection.swift in Sources */,
+				44FBA47E280D802F00C1234B /* Photos.swift in Sources */,
 				4491702927DA3218001789F8 /* TimePickerViewController.swift in Sources */,
 				44D97E9527F5DEDF0084557C /* NailsDescriptionViewController.swift in Sources */,
 				44D97E9027F5D47A0084557C /* cellCollectionViewCell.swift in Sources */,
-				44D97E5227F319220084557C /* MyWorksDescriptionViewController.swift in Sources */,
 				44A530BF27D77F1E00D1A03D /* SceneDelegate.swift in Sources */,
 				447F08A327F1DCB600B31D1E /* RegistrationCompleteDelegate.swift in Sources */,
-				44D97E4727F30E430084557C /* MyWorksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

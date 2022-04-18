@@ -17,6 +17,7 @@ class MainMenuViewController: UIViewController {
     
     @IBOutlet weak var registrationShadow: UILabel!
     @IBOutlet weak var myWorksShadow: UILabel!
+    @IBOutlet weak var gradientView: UIView!
     
     var isFirstLaunch: Bool = true
     var timer: Timer?
@@ -27,6 +28,13 @@ class MainMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = CGRect(x: 0, y: 0, width: 600, height: 1500)
+        gradientLayer.colors = [#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1).cgColor, UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor]
+                gradientLayer.shouldRasterize = true
+                gradientView.layer.addSublayer(gradientLayer)
+        
                     
         registrationButton.layer.borderWidth = 1
         registrationButton.layer.borderColor = UIColor.black.cgColor

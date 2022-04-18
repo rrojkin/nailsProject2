@@ -20,8 +20,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-eg-b4u" customClass="FSCalendar">
-                    <rect key="frame" x="16" y="94" width="382" height="468"/>
+                    <rect key="frame" x="16" y="94" width="382" height="382"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="382" id="qRT-N5-u5t"/>
+                    </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="titleTextSize">
                             <real key="value" value="25"/>
@@ -57,7 +60,6 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <gestureRecognizers/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dsg-eg-b4u" secondAttribute="bottom" constant="300" id="08v-NF-zVM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fPr-fg-Ja9" secondAttribute="trailing" constant="16" id="7CB-jd-3Yg"/>
                 <constraint firstItem="fPr-fg-Ja9" firstAttribute="top" secondItem="9Tb-FD-Ovt" secondAttribute="bottom" constant="5" id="APl-KV-yH3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Tb-FD-Ovt" secondAttribute="trailing" constant="16" id="LHo-Th-Rzr"/>

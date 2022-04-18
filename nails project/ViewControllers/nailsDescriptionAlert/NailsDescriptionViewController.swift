@@ -28,6 +28,8 @@ class NailsDescriptionViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        popUpView.backgroundColor = UIColor.init(named: "justColor")
+        tableView.backgroundColor = UIColor.init(named: "justColor")
         view.bringSubviewToFront(popUpView)
         
         popUpView.layer.cornerRadius = 5

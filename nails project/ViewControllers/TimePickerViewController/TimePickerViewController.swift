@@ -29,6 +29,7 @@ class TimePickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timeView.backgroundColor = UIColor.init(named: "justColor")
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(deleteView))
         wholeView.addGestureRecognizer(tap)

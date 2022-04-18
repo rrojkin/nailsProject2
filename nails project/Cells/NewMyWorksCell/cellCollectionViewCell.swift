@@ -9,6 +9,9 @@ import UIKit
 
 class cellCollectionViewCell: UICollectionViewCell {
     
+   
+    @IBOutlet weak var backgroundview: UIView!
+    
     @IBOutlet weak var nailsImage: UIImageView!
     
     override func awakeFromNib() {

@@ -28,6 +28,7 @@ class RegistrationViewController: UIViewController, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.init(named: "justColor")
         
         let nib = UINib(nibName: String(describing: RegistrationCellTableViewCell.self), bundle: nil)
         ServiceTable.register(nib, forCellReuseIdentifier: String(describing: RegistrationCellTableViewCell.self))

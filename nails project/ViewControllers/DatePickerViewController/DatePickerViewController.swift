@@ -20,15 +20,15 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
     @IBOutlet weak var viewOutlet: FSCalendar!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.init(named: "justColor")
 
 
         viewOutlet.delegate = self
-        viewOutlet.backgroundColor = .white
         viewOutlet.layer.cornerRadius = 10
         viewOutlet.layer.borderColor = UIColor.black.cgColor
         viewOutlet.layer.borderWidth = 1
         
-        let loc = Locale(identifier: "rus")
+        let loc = Locale(identifier: "RU_ru")
         self.viewOutlet.locale = loc
         viewOutlet.appearance.headerDateFormat = "MMMM"
         
@@ -42,7 +42,7 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
     
     
     func showAlert() {
-    let alert = UIAlertController(title: "Упс!", message: "На эту дату нет свободных мест :(", preferredStyle: .alert) //.alert
+    let alert = UIAlertController(title: "Упс!", message: "На эту дату нет свободных мест 😔", preferredStyle: .alert) //.alert
     let okAction = UIAlertAction(title: "Выбрать другую дату", style: .default)
     alert.addAction(okAction)
     
@@ -133,7 +133,6 @@ class DatePickerViewController: UIViewController, FSCalendarDelegate, FSCalendar
 
         present(navigation, animated: true)
         }
-    
 }
 
 

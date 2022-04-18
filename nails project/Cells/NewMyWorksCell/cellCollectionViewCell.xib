@@ -4,37 +4,61 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="cellCollectionViewCell" customModule="nails_project" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="269" height="265"/>
+            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="269" height="265"/>
+                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VoM-A8-KQV">
-                        <rect key="frame" x="9" y="7" width="250" height="250"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJv-oG-lIo" userLabel="cellBackground">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VoM-A8-KQV">
+                                <rect key="frame" x="10" y="10" width="150" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="170" id="HuX-CU-ygn"/>
-                            <constraint firstAttribute="width" constant="170" id="bXO-ju-O7n"/>
+                            <constraint firstAttribute="height" constant="170" id="0EK-uN-q2l"/>
+                            <constraint firstAttribute="width" constant="170" id="3ns-7j-cZ3"/>
+                            <constraint firstItem="VoM-A8-KQV" firstAttribute="leading" secondItem="kJv-oG-lIo" secondAttribute="leading" constant="10" id="Uyt-7Q-bGg"/>
+                            <constraint firstAttribute="bottom" secondItem="VoM-A8-KQV" secondAttribute="bottom" constant="10" id="oi3-Bi-rc3"/>
+                            <constraint firstAttribute="trailing" secondItem="VoM-A8-KQV" secondAttribute="trailing" constant="10" id="xKg-Rj-vve"/>
+                            <constraint firstItem="VoM-A8-KQV" firstAttribute="top" secondItem="kJv-oG-lIo" secondAttribute="top" constant="10" id="zA6-p3-IfE"/>
                         </constraints>
-                    </imageView>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="VoM-A8-KQV" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="eO0-sO-tFl"/>
-                <constraint firstItem="VoM-A8-KQV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fXD-jH-ZhC"/>
+                <constraint firstItem="kJv-oG-lIo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5TM-Ww-MFC"/>
+                <constraint firstItem="kJv-oG-lIo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Apr-Lb-pUe"/>
+                <constraint firstAttribute="bottom" secondItem="kJv-oG-lIo" secondAttribute="bottom" id="FUo-ms-aHg"/>
+                <constraint firstAttribute="bottom" secondItem="kJv-oG-lIo" secondAttribute="bottom" id="XAq-1D-W4p"/>
+                <constraint firstItem="kJv-oG-lIo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZkW-mm-AbV"/>
+                <constraint firstItem="kJv-oG-lIo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cUX-jK-sTp"/>
+                <constraint firstAttribute="trailing" secondItem="kJv-oG-lIo" secondAttribute="trailing" id="jmA-YP-Xd9"/>
+                <constraint firstAttribute="trailing" secondItem="kJv-oG-lIo" secondAttribute="trailing" id="uUw-kA-204"/>
             </constraints>
-            <size key="customSize" width="269" height="265"/>
+            <size key="customSize" width="170" height="170"/>
             <connections>
+                <outlet property="backgroundView" destination="kJv-oG-lIo" id="E20-3X-b8f"/>
+                <outlet property="backgroundview" destination="kJv-oG-lIo" id="ZV8-yR-HYN"/>
                 <outlet property="nailsImage" destination="VoM-A8-KQV" id="NUT-vg-KF1"/>
             </connections>
-            <point key="canvasLocation" x="148.55072463768118" y="97.433035714285708"/>
+            <point key="canvasLocation" x="75.362318840579718" y="65.625"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
